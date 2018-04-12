@@ -1,0 +1,46 @@
+/*
+凑算式
+
+       B      DEF
+A + — + -——— = 10
+       C       GHI
+
+（如果显示有问题，可以参见【图1.jpg】）
+
+这个算式中A~I代表1~9的数字，不同的字母代表不同的数字。
+
+比如：
+6+8/3+952/714 就是一种解法，
+5+3/1+972/486 是另一种解法。
+
+这个算式一共有多少种解法？
+
+注意：你提交应该是个整数，不要填写任何多余的内容或说明性文字。
+
+*/
+#include<iostream>
+#include<algorithm>
+#include<cstring>
+#include<cstdio>
+#include<cmath>
+#include<queue>
+#include<map>
+#include<set>
+#include<vector> 
+
+using namespace std;
+
+typedef long long LL; 
+const int MAXN = 10001;
+const int inf = 0x3f3f3f3f;
+
+int main() {
+	int sum = 0;
+	int a[9] = {1,2,3,4,5,6,7,8,9};
+	do{
+		if((double)a[0] + (double)a[1]/a[2] + (double)(a[3]*100+a[4]*10+a[5]) / (a[6]*100+a[7]*10+a[8]) == 10)
+			sum ++;
+	}while(next_permutation(a, a+9));
+	printf("%d\n", sum);
+	return 0;
+} 

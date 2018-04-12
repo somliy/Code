@@ -1,0 +1,73 @@
+
+
+
+欧拉筛法 Problem - 2161
+欧拉函数 Problem - 4483
+最大公约数 Problem - 1019
+最小公倍数 Problem - 1108
+乘法逆元 Problem - 1576
+扩展欧几里得 Problem - 2669
+Lucas定理 Problem - 3944 
+组合数取模 Problem - 3944
+逆序对 Problem - 4911
+康托展开 Problem - 1430
+进制转换 Problem - 2031
+高精度 Problem - 1042
+快速幂 Problem - 1061
+矩阵快速幂 Problem - 2604
+
+
+
+莫比乌斯反演 Problem - 4746
+Miller-Rabin素数测试 Problem - 2138 
+Prime-counting Function Problem - 5901 
+Pollard's rho整数分解 Problem - 3864 
+线性逆元 Problem - 5673
+高斯消元 Problem - 3364
+模线性方程组 Problem - 1573
+异或线性基 Problem - 3949
+行列式 Problem - 4305
+容斥原理 Problem - 4135
+置换群 Problem - 5495
+BSGS Problem - 2417 
+Extended BSGS Problem - 2815 
+快速沃尔什变换 Problem - 5909
+快速傅里叶变换 Problem - 5307
+自适应辛普森积分法 Problem - 1724
+Bell数 Problem - 2512 
+Catalan数 Problem - 1134 
+九余数定理 Problem - 1163
+抽屉原理 Problem - 5776
+蔡勒公式 Problem - 2005
+错排公式 Problem - 1465
+母函数 Problem - 2110
+
+
+
+
+
+
+
+
+
+
+
+
+int len = String.length(data) - 1;
+
+for(int i = 0; i < len < i++) {
+
+    for(int j = 0; j < len - i;j++) {
+
+        if(data[j]>data[j+1]) {
+
+            int temp=data[j];
+            data[j]=data[j+1];
+            data[j+1]=temp;
+
+        }
+        
+    }
+}
+
+
